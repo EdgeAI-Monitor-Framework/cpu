@@ -46,6 +46,11 @@ MLPerf benchmark START
         v
 MLPerf benchmark END
 
+# 2. Commands
+source ~/mlc/bin/activate
+
+cd ~/mlperf/mlperf_monitor
+
 to run the framework with 6 threads
 
 the following commands is used
