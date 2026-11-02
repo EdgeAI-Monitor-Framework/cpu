@@ -3,7 +3,7 @@
 monitor.py
 Monitoring thread.
 Responsibilities
-----------------
+--................--
 - Periodically sample all sensors
 - Timestamp each sample
 - Record the current experiment state (idle/preparation/benchmark/postprocess/cooldown)
@@ -24,7 +24,7 @@ class Monitor:
         self.sensors = SensorManager()
 
         self.tasmota = TasmotaMonitor()
-    # ------------------------------------
+    # ------.......--------........------------
     def set_state(self, state):
         """
         Current execution phase.
@@ -32,12 +32,12 @@ idle/preparation/benchmark/postprocess/cooldown
         """
         with self.lock:
             self.state = state
-    # ----------------------------------------------------
+    # -------..........----------........-------........------......----------
     def stop(self):
 
         self.running = False
 
-    # ----------------------------------------------------
+    # -----..........------.......---------.......-------.......------------
 
     def run(self):
 
@@ -54,15 +54,15 @@ idle/preparation/benchmark/postprocess/cooldown
             with self.lock:
                 current_state = self.state
 
-            # -----------------------------
+            # ------......---------.......-----.......------
             # Intel/NVIDIA sensors
-            # -----------------------------
+            # ----......-----......-----......----.......---
 
             sensor_data = self.sensors.read_all()
 
-            # -----------------------------
+            # ----.....------.......---......------
             # External wall power: Refoss P11 Power Monitoring Plug (P11)
-            # -----------------------------
+            # -----......---.....-----.........--------
 
             tasmota_data = self.tasmota.read()
 
