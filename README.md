@@ -45,8 +45,10 @@ MLPerf benchmark START
         |
         v
 MLPerf benchmark END
+```text
 
 ---
 
 ```text
 python3 wrapper.py   --idle 30   --cooldown 20   --interval 1   --csv trace.csv   --json trace.json   --cmd mlcr run-mlperf,inference,_find-performance,_full,_r5.1-dev   --model=resnet50   --implementation=reference   --framework=onnxruntime   --category=edge   --scenario=Offline   --execution_mode=test   --device=cpu   --docker   --quiet   --test_query_count=1000   --rerun   --threads=6
+
