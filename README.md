@@ -114,6 +114,12 @@ sudo docker --version
 
 for the rpi: Docker version 29.9.2, build a82e528
 
+sudo systemctl status docker
+
+sudo usermod -aG docker sara
+
+
+
 
 ............
 
