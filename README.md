@@ -34,7 +34,7 @@ The most important feature is the synchronization between the MLPerf benchmark i
 
 The framework attempts to identify:
 
-
+```text
 MLPerf benchmark START
         |
         v
@@ -45,18 +45,14 @@ MLPerf benchmark START
         |
         v
 MLPerf benchmark END
-
-
-```text
-
-python3 -m pip install pexpect
-
 ```
 
-
-for raspberry pi version : 4.9.0 is used
 ```text
+python3 -m pip install pexpect
+```
+for raspberry pi version : 4.9.0 is used
 
+```text
 python3 -m pip install psutil
 ```
 for rpi: 7.2.2
