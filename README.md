@@ -139,3 +139,15 @@ zip -r project_archive2.zip .
 python3 wrapper.py   --idle 30   --cooldown 20   --interval 1   --csv trace.csv   --json trace.json   --cmd mlcr run-mlperf,inference,_find-performance,_full,_r5.1-dev   --model=resnet50   --implementation=reference   --framework=onnxruntime   --category=edge   --scenario=Offline   --execution_mode=test   --device=cpu   --docker   --quiet   --test_query_count=1000   --rerun   --threads=6
 ```
 
+```text
+ ls -lt
+```
+
+```text
+ zip -r f348d1159a50-reference-cpu-onnxruntime-v1.23.2-default_config.zip f348d1159a50-reference-cpu-onnxruntime-v1.23.2-default_config/
+```
+
+```text
+ sudo scp -r -P 30544 f348d1159a50-reference-cpu-onnxruntime-v1.23.2-default_config.zip sara-dana-kabl-talabani@proxy051.r3proxy.com:/run/media/sara-dana-kabl-talabani/sara/sara/mlperf/cpu/nuc/resnet50/onnxruntime/cpu/offline/performance_only/exp1/mlperf/th6
+```
+
