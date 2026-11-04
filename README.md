@@ -129,6 +129,13 @@ cd ~/mlperf/mlperf_monitor
 source ~/mlc/bin/activate
 ```
 ```text
+zip -r project_archive2.zip .
+```
+```text
+~/MLC/repos/local/cache/get-mlperf-inference-results-dir_5f93110d/valid_results/
+```
+
+```text
 python3 wrapper.py   --idle 30   --cooldown 20   --interval 1   --csv trace.csv   --json trace.json   --cmd mlcr run-mlperf,inference,_find-performance,_full,_r5.1-dev   --model=resnet50   --implementation=reference   --framework=onnxruntime   --category=edge   --scenario=Offline   --execution_mode=test   --device=cpu   --docker   --quiet   --test_query_count=1000   --rerun   --threads=6
 ```
 
