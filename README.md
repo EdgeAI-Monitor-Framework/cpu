@@ -45,18 +45,21 @@ MLPerf benchmark START
         |
         v
 MLPerf benchmark END
-```text
 
----
-......
+```
+
+```text
 
 python3 -m pip install pexpect
 
+```
+
+
 for raspberry pi version : 4.9.0 is used
-..........
+```text
 
 python3 -m pip install psutil
-
+```
 for rpi: 7.2.2
 ............
 for the rpi
@@ -123,7 +126,14 @@ sudo usermod -aG docker sara
 
 ............
 
+```text
+cd ~/mlperf/mlperf_monitor
+```
 
 ```text
+source ~/mlc/bin/activate
+```
+```text
 python3 wrapper.py   --idle 30   --cooldown 20   --interval 1   --csv trace.csv   --json trace.json   --cmd mlcr run-mlperf,inference,_find-performance,_full,_r5.1-dev   --model=resnet50   --implementation=reference   --framework=onnxruntime   --category=edge   --scenario=Offline   --execution_mode=test   --device=cpu   --docker   --quiet   --test_query_count=1000   --rerun   --threads=6
+```
 
