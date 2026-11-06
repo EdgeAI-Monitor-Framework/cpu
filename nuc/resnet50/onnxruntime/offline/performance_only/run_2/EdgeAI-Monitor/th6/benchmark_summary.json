@@ -1,0 +1,45 @@
+{
+    "benchmark": {
+        "start_timestamp": 1793813713.0950866,
+        "end_timestamp": 1793813948.3128493,
+        "duration_s": 235.21776270866394,
+        "samples": 168
+    },
+    "rapl": {
+        "psys_energy_j": 23054.124024999997,
+        "psys_energy_wh": 6.403923340277777,
+        "package_energy_j": 15192.673874999979,
+        "package_energy_wh": 4.220187187499994,
+        "core_energy_j": 13252.520273000002,
+        "uncore_energy_j": 0.09509299999999143,
+        "average_psys_power_w": 98.23721239766436,
+        "maximum_psys_power_w": 100.18401969793676,
+        "average_package_power_w": 64.76724886781365,
+        "maximum_package_power_w": 65.11111503591377
+    },
+    "temperature": {
+        "average_c": 72.23329365079364,
+        "maximum_average_sensor_c": 75.82,
+        "average_of_max_sensor_c": 87.17946428571429,
+        "maximum_sensor_temperature_c": 95.05
+    },
+    "cpu": {
+        "average_utilization_percent": 95.30119047619047,
+        "maximum_utilization_percent": 96.2,
+        "average_frequency_mhz": 3160.4036020021645,
+        "maximum_frequency_mhz": 3359.5283636363633
+    },
+    "memory": {
+        "average_utilization_percent": 14.163690476190476,
+        "maximum_utilization_percent": 14.6
+    },
+    "tasmota": {
+        "average_power_w": 48.25748502994012,
+        "maximum_power_w": 49.0,
+        "wall_energy_j": 11308.164843678474,
+        "wall_energy_wh": 3.1411569010217986,
+        "average_voltage_v": 123.0,
+        "average_current_a": 0.40502994011976046,
+        "average_power_factor": 0.9673652694610778
+    }
+}
